@@ -1,7 +1,8 @@
-package com.josenaves.forecast
+package com.josenaves.forecast.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.josenaves.forecast.R
 
 class MainActivity : AppCompatActivity() {
 
