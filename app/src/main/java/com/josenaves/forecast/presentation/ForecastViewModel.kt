@@ -46,7 +46,7 @@ class ForecastViewModel(private val repository: ForecastRepository) : ViewModel(
         }
     }
 
-    private fun showSnackbarMessage(@StringRes message: Int) {
+    fun showSnackbarMessage(@StringRes message: Int) {
         snackbarText.postValue(Event(message))
     }
 
