@@ -1,6 +1,6 @@
 package com.josenaves.forecast.data.remote.api
 
-import com.josenaves.forecast.data.remote.api.dto.ForecastResponseDto
+import com.josenaves.forecast.data.remote.api.dto.ForecastResponse
 import kotlinx.coroutines.Deferred
 import retrofit2.Response
 import retrofit2.http.GET
@@ -14,6 +14,6 @@ interface DarkSkyApi {
     fun getForecastAsync(
         @Path("latitude") latitude: Double,
         @Path("longitude") longitude: Double
-    ): Deferred<Response<ForecastResponseDto>>
+    ): Deferred<Response<ForecastResponse>>
 
 }

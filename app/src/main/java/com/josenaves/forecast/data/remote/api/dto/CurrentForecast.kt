@@ -1,12 +1,5 @@
 package com.josenaves.forecast.data.remote.api.dto
 
-data class ForecastResponseDto(
-    val latitude: Double,
-    val longitude: Double,
-    val timezone: String,
-    val currently: CurrentForecast
-)
-
 data class CurrentForecast(
     val time: Long,
     val summary: String,
