@@ -30,11 +30,15 @@ class ForecastViewModel(private val repository: ForecastRepository) : ViewModel(
         viewModelJob.cancel()
     }
 
-    fun fetchForecastAsync(section: String) = ioScope.launch {
+    fun fetchForecastAsync(latitude: Double, longitude: Double) = ioScope.launch {
         isLoading.postValue(Event(true))
         try {
-            val forecast = repository.getCurrentDayForecast()
-            onDataReady.postValue(Event(forecast))
+            val forecast = repository.getCurrentDayForecast(latitude, longitude)
+            forecast?.let {
+                onDataReady.postValue(Event(it))
+            } ?: run {
+                showSnackbarMessage(R.string.message_error_getting_forecast)
+            }
         } catch (e: Exception) {
             showSnackbarMessage(R.string.message_error_getting_forecast)
         } finally {

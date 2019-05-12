@@ -45,13 +45,8 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:3.14.1")
     implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
 
-
-    // AndroidX (based on koin-android)
-    // Koin AndroidX Scope feature
-    implementation "org.koin:koin-androidx-scope:2.0.0-GA"
-
-    // Koin AndroidX ViewModel feature
-    implementation "org.koin:koin-androidx-viewmodel:2.0.0-GA"
+    implementation 'org.koin:koin-androidx-scope:2.0.0-GA'
+    implementation 'org.koin:koin-androidx-viewmodel:2.0.0-GA'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
