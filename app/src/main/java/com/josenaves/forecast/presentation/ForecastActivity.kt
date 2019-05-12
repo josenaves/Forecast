@@ -1,10 +1,10 @@
-package com.josenaves.forecast.ui
+package com.josenaves.forecast.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.josenaves.forecast.R
 
-class MainActivity : AppCompatActivity() {
+class ForecastActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Forecast</string>
+    <string name="message_error_getting_forecast">Error getting forecast data!</string>
 </resources>
