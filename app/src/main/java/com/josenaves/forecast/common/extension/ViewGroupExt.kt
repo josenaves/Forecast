@@ -1,6 +1,6 @@
 package com.josenaves.forecast.common.extension
 
-import androidx.constraintlayout.widget.ConstraintLayout
+import android.view.ViewGroup
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
@@ -10,14 +10,14 @@ import com.josenaves.forecast.common.architecture.Event
 /**
  * Transforms static java function Snackbar.make() to an extension function on View.
  */
-fun ConstraintLayout.showSnackbar(snackbarText: String, timeLength: Int) {
+fun ViewGroup.showSnackbar(snackbarText: String, timeLength: Int) {
     Snackbar.make(this, snackbarText, timeLength).show()
 }
 
 /**
  * Triggers a snackbar message when the value contained by snackbarTaskMessageLiveEvent is modified.
  */
-fun ConstraintLayout.setupSnackbar(
+fun ViewGroup.setupSnackbar(
     lifecycleOwner: LifecycleOwner,
     snackbarEvent: LiveData<Event<Int>>,
     timeLength: Int

@@ -2,4 +2,15 @@
     <string name="app_name">Forecast</string>
     <string name="message_error_getting_forecast">Error getting forecast data!</string>
     <string name="message_error_getting_location">Error getting location!</string>
+    <string name="message_error_not_connected">You device is not connected to the Internet!</string>
+    <string name="message_no_permission">You must give permission for the app access your location in order to get the weather forecast</string>
+    <string name="label_forecast_results">Forecast results for today</string>
+    <string name="label_loading">Fetching data from the cloud...</string>
+    <string name="label_coordinates">Coordinates: %f, %f</string>
+    <string name="label_timezone">Timezone: %s</string>
+    <string name="label_datetime">Date/time: %s</string>
+    <string name="label_summary">Summary: %s</string>
+    <string name="label_temperature">Temperature: %f F</string>
+    <string name="label_precipitation_probability">Precipitation probability: %f %%</string>
+    <string name="label_precipitation_intensity">Precipitation intensity: %f</string>
 </resources>
